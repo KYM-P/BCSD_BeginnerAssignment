@@ -16,12 +16,11 @@
         android:id="@+id/tv_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login Page"
+        android:text="@string/tv_login_page_text"
         android:layout_weight="29"
         android:textSize="30dp"
-        android:textColor="@color/my_glay"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/space_1"/>
+        android:layout_below="@id/space_1" />
     <Space
         android:id="@+id/space_2"
         android:layout_centerHorizontal="true"
@@ -34,9 +33,9 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:ems="10"
-            android:inputType="text"
+        android:inputType="text"
         android:textSize="20dp"
-        android:hint="ID"
+        android:hint="@string/et_id_hint"
         android:paddingLeft="20dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/space_2"/>
@@ -54,7 +53,7 @@
         android:ems="10"
         android:inputType="textPassword"
         android:textSize="20dp"
-        android:hint="PW"
+        android:hint="@string/et_pw_hint"
         android:paddingLeft="20dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/space_3" />
@@ -69,14 +68,13 @@
         android:id="@+id/btn_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:textAllCaps="false"
-        android:backgroundTint="@color/my_glay"
+        android:text="@string/btn_login_text"
         android:textSize="20dp"
         android:paddingHorizontal="20dp"
         android:paddingVertical="10dp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/space_4"/>
+        android:layout_below="@id/space_4"
+        style="@style/my_button_style"/>
     <Space
         android:id="@+id/space_5"
         android:layout_centerHorizontal="true"
@@ -88,11 +86,10 @@
         android:id="@+id/btn_to_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="To Main"
-        android:textAllCaps="false"
-        android:backgroundTint="@color/my_glay"
+        android:text="@string/btn_to_main_text"
         android:textSize="20dp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/space_5"/>
+        android:layout_below="@id/space_5"
+        style="@style/my_button_style"/>
 
 </RelativeLayout>

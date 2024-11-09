@@ -1,3 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- 번역 불가 상태 -->
     <string name="app_name">Bcsd_Week3_Assignment</string>
+    <string name="tv_login_contraint" translatable="false">로그인(contraint)</string>
+    <string name="tv_login_linear" translatable="false">로그인(Linear)</string>
+    <string name="tv_login_relative" translatable="false">로그인(Relative)</string>
+    <string name="tv_login_page_text" translatable="false">로그인 화면</string>
+    <string name="btn_login_text" translatable="false">로그인</string>
+    <string name="btn_to_main_text" translatable="false">메인으로</string>
+    <string name="et_id_hint" translatable="false">아이디</string>
+    <string name="et_pw_hint" translatable="false">비밀번호</string>
 </resources>
