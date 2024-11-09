@@ -7,5 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="my_glay">#535353</color>
+    <color name="my_gray">#535353</color>
+    <color name="my_b_gray">#959595</color>
+    <color name="my_b_purple">#C49EF8</color>
+    <color name="my_b_sky">#F3FFFD</color>
+    <color name="my_d_sky">#485353</color>
 </resources>

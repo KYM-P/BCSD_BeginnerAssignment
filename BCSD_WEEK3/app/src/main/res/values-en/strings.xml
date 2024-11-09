@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 영어 번역 상태 -->
+    <string name="app_name">Bcsd_Week3_Assignment</string>
+    <string name="tv_login_contraint">Login(contraint)</string>
+    <string name="tv_login_linear">Login(Linear)</string>
+    <string name="tv_login_relative">Login(Relative)</string>
+    <string name="tv_login_page_text">Login Page</string>
+    <string name="btn_login_text">Login</string>
+    <string name="btn_to_main_text">to Main</string>
+    <string name="et_id_hint">ID</string>
+    <string name="et_pw_hint">PW</string>
+</resources>

@@ -6,33 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:gravity="top">
+    android:gravity="top"
+    android:theme="@style/my_style">
+    <!-- theme : 하위 view 전부 , style 해당 view 만 -->
 
 
     <Button
         android:id="@+id/btn_contraint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login(contraint)"
+        android:text="@string/tv_login_contraint"
         android:layout_marginTop="10dp"
-        android:backgroundTint="@color/my_glay"
-        android:textSize="20dp"/>
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        style="@style/my_button_style"/>
 
     <Button
         android:id="@+id/btn_linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login(Linear)"
+        android:text="@string/tv_login_linear"
         android:layout_marginTop="10dp"
-        android:backgroundTint="@color/my_glay"
-        android:textSize="20dp"/>
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        style="@style/my_button_style"/>
 
     <Button
         android:id="@+id/btn_relative"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login(Relative)"
+        android:text="@string/tv_login_relative"
         android:layout_marginTop="10dp"
-        android:backgroundTint="@color/my_glay"
-        android:textSize="20dp"/>
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        style="@style/my_button_style"/>
 </LinearLayout>
