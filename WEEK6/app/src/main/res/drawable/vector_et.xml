@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    android:name="et_vector"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportHeight="12"
+    android:viewportWidth="12">
+    <!--
+    android:name 	vector drwable 의 이름을 정의
+    android:width   너비
+    android:height  높이
+    android:viewportWidth   뷰 포트 공간의 넓이 ( path 로 그리는 공간)
+    android:viewportHeight  뷰 포트 공간의 높이 ( path 로 그리는 공간)
+    android:tint    색조
+    android:tintMode    색조 mode / 기본은 src_in
+    android:autoMirrored    레이아웃 방향에 따른 mirror 적용 여부 / 기본 false
+    android:alpha   불투명도 / 기본은 1.0
+    -->
+    <group>
+        <!--
+        path 들을 묶어서 다룰 수 있음
+        android:name    그룹 이름
+        android:rotation    그룹의 회전각 / 기본은 0
+        android:pivotX  그룹의 피봇 X 좌표 / 기본은 0 / 확대, 회전 등의 축
+        android:pivotY  그룹의 피봇 Y 좌표 / 기본은 0 / 확대, 회전 등의 축
+        android:scaleX  X 좌표 크기 / 기본은 0
+        android:scaleY  Y 좌표 크기 / 기본은 0
+        android:translateX  X 좌표의 이동량 / 기본은 0
+        android:translateY  Y 좌표의 이동량 / 기본은 0
+        -->
+    </group>
+    <!-- This path draws a circle. -->
+    <path
+        android:fillColor="@color/my_gray"
+        android:pathData="M 2,6 C 2,3.8 3.8,2 6,2 C 8.2,2 10,3.8 10,6 C 10,8.2 8.2,10 6,10 C 3.8,10 2,8.2 2,6"/>
+    <path
+        android:fillColor="@color/my_b_gray"
+        android:pathData="M 6,4 C 3.3,4 3.3,8 6,8 M 6,4 C 8.6,4 8.6,8 6,8"/>
+    <!--
+    android:name    경로의 이름
+    android:pathData    경로 데이터 정의
+        M x,y (x,y 지점으로 이동)
+        L x,y (x,y 지점까지 라인 생성) 라인으로 만들어지는 도형에 채색
+        C x1,y1 x2,y2 x,y   (x, y 지점까지 x1, y1 와 x2, y2 의 제어점을 이용한 3차 베지에 곡선)
+        * 직관적인 설명 : 현 지점부터 x, y 까지 만들어지는 선을 x1, y1 지점으로 잡아당기면서 x2, y2 지점으로 잡아당기는 느낌 / 거리가 멀 수록 더 강한 힘
+        * 이론적 설명 : 점 4개로 부터 만들어지는 선 3개를 이용 / 자세한건 찾아보기
+    android:fillColor   경로를 체우는 색상 지정 / 그라데이션 가능
+    android:strokeColor 경로 의 외각선 색상 지정 / 그라데이션 가능
+    android:strokeWidth 외각선 넓이 / 기본은 0
+    android:strokeAlpha 외각선 높이 / 기본은 0
+    android:fillAlpha   경로의 불투명도 / 기본은 1
+    android:trimPathStart   시작지점으로부터 일부 경로를 trim (0~1 값 입력) / 기본은 0
+    android:trimPathEnd 끝나는 지점으로부터 일부 경로를 trim (0~1 값 입력) / 기본은 0
+    android:PathOffset  자르기 영역 이동 (0~1 값 입력) / 기본은 0
+    android:strokeLineCap   라인의 끝모양 설정 (butt, round, square) / 기본은 butt
+    android:strokeLineJoin  꼭짓점 모양 설정 (miter, round, bevel) / 기본은 miter
+    android:strokeMiterLimit    획이있는 패스에 대한 제한선 설정 / 기본은 4
+    android:fillType    경로의 fill 타입 설정 (evenOdd, nonZero)
+    -->
+</vector>
