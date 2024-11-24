@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlankFragment"
+    android:theme="@style/myTextStyle"
+    android:background="@color/my_b_gray"
+    android:clickable="true">
+    <!-- clickable 을 통해 Fragment 뒤의 view가 클릭되지 않도록 한다
+         background 를 통해 Fragment 가 투명하지 않게 한다 -->
+
+    <TextView
+        android:id="@+id/tv_fragment_value"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="0"
+        android:textSize="170sp"
+        android:gravity="center"
+        style="@style/myTextStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
