@@ -1,6 +1,5 @@
 package com.example.week6
 
-// binding
 import android.annotation.SuppressLint
 import android.content.DialogInterface
 import android.os.Bundle
@@ -148,7 +147,7 @@ class MainActivity : AppCompatActivity() {
         builder.show()
     }
     // DialogFragment / 커스텀 다이얼로그 /
-    private fun setCustomDialog(){
+    private fun setCustomDialog(){ // Activity 의 생명주기 내에 속하는 Fragment 이므로 해당 Activity 에서만 선언 가능
         val dialog = MyDialogFragment()
         dialog.show(supportFragmentManager,"")
     }

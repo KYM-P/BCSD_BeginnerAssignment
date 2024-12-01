@@ -9,53 +9,59 @@
     android:clickable="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="300dp"
+        android:layout_width="350dp"
         android:layout_height="200dp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:background="@drawable/dialog_shape">
-        <TextView
-            android:id="@+id/tv_dialog_title"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/et_dialog_title"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:text="Custom"
-            android:textSize="50sp"
+            android:hint="수정할 이름을 입력하세요"
+            android:gravity="center"
+            android:inputType="text"
+            android:textSize="22sp"
+            android:maxLength="10"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginBottom="40dp"
+            android:layout_marginBottom="20dp"
             app:layout_constraintBottom_toBottomOf="parent">
-        </TextView>
+        </EditText>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/vector_et"
+            app:srcCompat="@drawable/selector_icon"
+            android:layout_margin="10dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent">
         </ImageView>
 
         <Button
-            android:id="@+id/btn_dialog_true"
+            android:id="@+id/btn_dialog_false"
             android:layout_width="100dp"
-            android:layout_height="0dp"
-            android:text="true"
+            android:layout_height="50dp"
+            android:text="취소"
             android:textAllCaps="false"
-            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textSize="25sp"
             android:background="@drawable/selector_button"
             android:layout_margin="10dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintBottom_toBottomOf="parent">
         </Button>
         <Button
-            android:id="@+id/btn_dialog_false"
+            android:id="@+id/btn_dialog_true"
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:text="false"
+            android:text="확인"
             android:textAllCaps="false"
-            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textSize="25sp"
             android:background="@drawable/selector_button"
             android:layout_margin="10dp"
             app:layout_constraintRight_toRightOf="parent"
