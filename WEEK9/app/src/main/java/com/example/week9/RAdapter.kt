@@ -14,6 +14,7 @@ class RAdapter (
         var itemArtist = binding.tvItemArtist
         var itemAlbum = binding.tvItemAlbum
         var itemUri = binding.tvItemUri
+        var itemTime = binding.tvItemTime
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder { // viewHolder 생성마다 호출 / 데이터 바인딩 전 상태
@@ -31,6 +32,10 @@ class RAdapter (
             itemAlbum.isSelected = true
             itemUri.text = items[position].uri.toString()
             itemUri.isSelected = true
+            val time_H = items[position].duration / (3600 * 1000)
+            val time_M = (items[position].duration - (time_H * 3600 * 1000)) / (60 * 1000)
+            val time_S = (items[position].duration - (time_H * 3600 * 1000) - (time_M * 60 * 1000)) / (1 * 1000)
+            itemTime.text = "시간 : $time_H : $time_M : $time_S"
         }
     }
 
