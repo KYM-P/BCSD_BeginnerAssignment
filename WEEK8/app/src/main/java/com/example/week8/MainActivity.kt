@@ -151,6 +151,8 @@ class MainActivity : AppCompatActivity() {
     fun drawableToBitmap(context: Context, drawableId: Int): Bitmap {
         // Drawable 리소스
         val drawable: Drawable = context.getDrawable(drawableId) ?: throw IllegalArgumentException("Drawable not found")
+        // drawable 오류시 exception 대신 기본 이미지를 넣어 처리할 수 있음
+        // val drawable: Drawable = ContextCompat.getDrawable(context, drawableId) ?: ContextCompat.getDrawable(context, R.drawable.error_image)
         // 드로어블의 크기
         val width = drawable.intrinsicWidth.takeIf { it > 0 } ?: 1
         val height = drawable.intrinsicHeight.takeIf { it > 0 } ?: 1
