@@ -25,6 +25,7 @@ class MyService : Service() {
         const val ACTION_REPLAY = "com.music.REPLAY"
         const val ACTION_PAUSE = "com.music.PAUSE"
         const val ACTION_STOP = "com.music.STOP"
+        const val N_CHANNEL = "Notification_Ch1"
     }
 
     private var mediaPlayer : MediaPlayer? = null
@@ -179,7 +180,7 @@ class MyService : Service() {
     // 채널 생성
     private fun createNotificationChannel() {
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val name = "Notification_Ch"
+            val name = N_CHANNEL
             val descriptionText = "Test Notification" // 알림 채널 설명
             val importance = NotificationManager.IMPORTANCE_LOW
             val channel = NotificationChannel(CHANNEL_ID, name, importance).apply {
