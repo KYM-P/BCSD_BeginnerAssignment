@@ -200,10 +200,10 @@ class MainActivity : AppCompatActivity() {
             PERMISSION_REQUEST_CODE -> {
                 if (grantResults.isEmpty() || grantResults[0] != PackageManager.PERMISSION_GRANTED) {
                     Toast.makeText(applicationContext, "Permission is denied", Toast.LENGTH_SHORT)
-                        .show() // 권한 허용시 toast
+                        .show() // 권한 비 허용시 toast
                 } else {
                     Toast.makeText(applicationContext, "Permission is granted", Toast.LENGTH_SHORT)
-                        .show() // 권한 비 허용시 toast
+                        .show() // 권한 허용시 toast
                 }
             }
         }
