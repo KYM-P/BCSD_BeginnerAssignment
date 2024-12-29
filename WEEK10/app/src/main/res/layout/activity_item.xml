@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".item"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_item_uri"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="uri/uri/uri/uri"
+            android:textSize="13sp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scrollHorizontally="true"
+            android:paddingTop="3dp"
+            android:gravity="top"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_item_album"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="album"
+            android:textSize="15sp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:paddingBottom="3dp"
+            android:gravity="bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_item_artist"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="artist"
+            android:textSize="15sp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:layout_marginLeft="20dp"
+            android:paddingBottom="3dp"
+            android:gravity="bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_item_album">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_item_time"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="time"
+            android:textSize="13sp"
+            android:layout_marginLeft="20dp"
+            android:paddingBottom="3dp"
+            android:gravity="bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_item_artist">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="artist"
+            android:textSize="20sp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center|center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+        </TextView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

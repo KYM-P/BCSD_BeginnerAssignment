@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Music"
+        android:textSize="50sp"
+        android:background="@color/my_b_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main"/>
+
+    <TextView
+        android:id="@+id/tv_permission_unchecked"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:paddingBottom="30dp"
+        android:text="파일을 보려면 권한을 허용해야 합니다."
+        android:textSize="20sp"
+        android:gravity="bottom|center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_permission_unchecked_clickable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="설정으로 이동"
+        android:textSize="20sp"
+        android:textColor="@drawable/clickable_text_colors"
+        android:gravity="center"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_permission_unchecked"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_player"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <TextView
+            android:id="@+id/tv_music_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="30sp"
+            android:paddingTop="15dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scrollHorizontally="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </TextView>
+        <ToggleButton
+            android:id="@+id/tgbtn_play_and_pause"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/selector_toggle_play"
+            android:textOff=""
+            android:textOn=""
+            android:layout_marginBottom="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+        </ToggleButton>
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_music_stop"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintStart_toStartOf="@id/tgbtn_play_and_pause"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+        </Button>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
