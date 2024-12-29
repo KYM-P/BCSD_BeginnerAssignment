@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- 삼각형 경로 -->
+    <path
+        android:fillColor="@color/my_d_gray"
+        android:pathData="M12,8 L12,40 L36,24 Z"/>
+</vector>
