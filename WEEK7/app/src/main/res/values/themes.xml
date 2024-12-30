@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.WEEK7" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="myTextStyle">
+        <item name="android:textColor">@color/my_d_gray</item>
+    </style>
+</resources>

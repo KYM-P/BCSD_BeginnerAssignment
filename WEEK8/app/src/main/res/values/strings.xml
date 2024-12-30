@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WEEK8</string>
+    <string name="noti_title" translatable="false">앱 알림</string>
+    <string name="noti_content" translatable="false">알림 내용</string>
+    <string name="noti_content_detail" translatable="false">세부 알림 내용</string>
+    <string name="noti_more" translatable="false">더보기</string>
+    <string name="noti_cancel" translatable="false">닫기</string>
+</resources>
