@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WEEK11</string>
+    <string name="st_start">start</string>
+    <string name="st_pause">pause</string>
+    <string name="st_stop">stop</string>
+    <string name="st_lab">lab</string>
+    <string name="st_zero_time">00 : 00 : 00</string>
+</resources>
