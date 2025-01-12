@@ -15,6 +15,7 @@ import android.net.Uri
 import android.os.BatteryManager
 import android.os.Build
 import android.os.IBinder
+import android.util.Log
 import androidx.core.app.NotificationCompat
 
 class MyService : Service() {
@@ -78,7 +79,15 @@ class MyService : Service() {
 
     // Service 시작 함수를 받았을 때
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
-        playMusic(intent?.getParcelableExtra("MusicUri", Uri::class.java)!!, intent?.getStringExtra("MusicName")!!)
+        intent?.let {
+            if(intent.getParcelableExtra("MusicUri", Uri::class.java) != null &&
+                intent.getStringExtra("MusicName") != null) {
+                playMusic(intent.getParcelableExtra("MusicUri", Uri::class.java)!!, intent.getStringExtra("MusicName")!!)
+            }
+            else{
+                Log.e("MY_TAG","수신 데이터 없음")
+            }
+        }
         return START_STICKY
     }
 
