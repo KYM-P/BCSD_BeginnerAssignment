@@ -93,7 +93,7 @@ class MainActivity : AppCompatActivity() {
     }
     /* CoroutineScope(Dispatchers.Main) 방식 > 메모용 코드
     override fun onDestroy() {
-        scope?.cancel()
+        job?.cancel()
         super.onDestroy()
     }
      */
