@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_rainbow"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="@string/menu_rainbow_name">
+    </item>
+    <item
+        android:id="@+id/menu_number"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_day"
+        android:title="@string/menu_number_name">
+    </item>
+    <item
+        android:id="@+id/menu_alphabet"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_sort_alphabetically"
+        android:title="@string/menu_alphabet_name">
+    </item>
+
+</menu>
