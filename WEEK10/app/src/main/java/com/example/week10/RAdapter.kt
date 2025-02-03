@@ -38,7 +38,7 @@ class RAdapter (
             itemUri.text = items[position].uri.toString()
             itemUri.isSelected = true
             val time_H = items[position].duration / (3600 * 1000)
-            val time_M = (items[position].duration % (time_H * 3600 * 1000)) / (60 * 1000)
+            val time_M = (items[position].duration % (3600 * 1000)) / (60 * 1000)
             val time_S = (items[position].duration % (60 * 1000)) / (1 * 1000)
             itemTime.text = "시간 : $time_H : $time_M : $time_S"
             item.setOnClickListener{
