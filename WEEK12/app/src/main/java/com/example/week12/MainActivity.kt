@@ -10,7 +10,6 @@ import com.example.week12.viewpager.fragment.NumberViewFragment
 import com.example.week12.viewpager2.ViewPager2Adapter
 import com.example.week12.viewpager2.ZoomOutPageTransformer
 import com.google.android.material.tabs.TabLayoutMediator
-import java.util.Objects
 
 class MainActivity : AppCompatActivity() {
 
