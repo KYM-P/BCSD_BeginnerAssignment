@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WEEK13</string>
+    <string name="test_text">empty</string>
+    <string name="add_title_text">단어 추가</string>
+    <string name="add_btn_text">추가</string>
+    <string name="add_name_hint">단어</string>
+    <string name="add_mean_hint">뜻</string>
+</resources>
