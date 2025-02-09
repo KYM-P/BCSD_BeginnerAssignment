@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data android:layout_width="wrap_content">
+        <variable
+            name="viewModel"
+            type="com.example.week14.ui.add.AddWordItemActivityModel" />
+    </data>
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.add.AddWordItemActivity"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_title_text"
+            android:textSize="40dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/word_img_iv"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="30dp"
+            android:src="@color/bright_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_tv">
+        </ImageView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/word_img_add_btn"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/add_img_btn_text"
+            app:cornerRadius="30dp"
+            android:backgroundTint="@color/material_dynamic_tertiary40"
+            app:layout_constraintTop_toBottomOf="@id/word_img_iv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+        </com.google.android.material.button.MaterialButton>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/word_name_il"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:expandedHintEnabled="false"
+            app:counterMaxLength="30"
+            app:counterEnabled="true"
+            app:layout_constraintTop_toBottomOf="@+id/word_img_add_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/word_name_et"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/add_name_hint"
+                android:text="@{viewModel.newWordName}"
+                android:maxLines="1"
+                android:maxLength="30">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/word_mean_il"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:expandedHintEnabled="false"
+            app:counterEnabled="true"
+            app:layout_constraintTop_toBottomOf="@+id/word_name_il"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/word_mean_et"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/add_mean_hint"
+                android:text="@{viewModel.newWordMean}"
+                android:maxLines="1"
+                android:maxLength="30">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/word_add_btn"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/add_btn_text"
+            app:cornerRadius="30dp"
+            android:backgroundTint="@color/material_dynamic_tertiary40"
+            app:layout_constraintTop_toBottomOf="@id/word_mean_il"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+        </com.google.android.material.button.MaterialButton>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
