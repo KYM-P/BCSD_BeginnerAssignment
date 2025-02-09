@@ -63,7 +63,7 @@ data class MainActivityModel (
     }
 
     fun setItemsFromDb() : ArrayList<WordItemData> {
-        CoroutineScope(Dispatchers.IO).launch { // 비동기 실행.
+        CoroutineScope(Dispatchers.IO).launch { // 비동기 실행. / + viewModel 에서는 viewModelScope 사용 권장
             db = WordItemDataDatabase.getInstance(application.applicationContext)
             ArrayList(db.WordItemDataDao().getAll()).forEach{
                 addWord(it)
