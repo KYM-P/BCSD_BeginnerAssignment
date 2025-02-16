@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WEEK15</string>
+    <string name="main_search_hint">검색</string>
+    <string name="main_item_title">title</string>
+    <string name="repo_item_title">title</string>
+    <string name="repo_item_detail">detail</string>
+    <string name="repo_error_username">잘못된 유저 이름 입니다.</string>
+</resources>
